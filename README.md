@@ -1,7 +1,7 @@
-# Redux-worker-middleware
+# Redux-webworker-middleware
 
 ## Install
-npm i --save redux-worker-middleware
+npm i --save redux-webworker-middleware
 
 ## Usage
 В точке входа в ваше приложение:
@@ -14,7 +14,7 @@ import App from './containers/app';
 // Добавили
 import WorkerMiddleware, { reducer } from 'redux-webworker-middleware';
 
-// Первым аргументом передаем редюсер из redux-worker-middleware
+// Первым аргументом передаем редюсер из redux-webworker-middleware
 let store = createStore(reducer, applyMiddleware(
     // Передаем URL веб-воркера
     WorkerMiddleware('/js/worker-reducer.js')
