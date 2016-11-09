@@ -1,0 +1,31 @@
+{
+  "name": "redux-worker-middleware",
+  "description": "Redux middleware for calculate state in web-worker",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:seokirill/redux-worker-middleware.git"
+  },
+  "keywords": [
+    "Redux",
+    "Worker",
+    "Web worker",
+    "middleware"
+  ],
+  "author": "Kirill Kovalev <seokirillstarsnab@gmail.com>",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "homepage": "https://github.com/seokirill/redux-worker-middleware",
+  "bugs": {
+    "url": "https://github.com/seokirill/redux-worker-middleware/issues"
+  },
+  "license": {
+    "type": "MIT"
+  },
+  "private": false,
+  "scripts": {},
+  "devDependencies": {},
+  "dependencies": {}
+}
