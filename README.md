@@ -12,7 +12,7 @@ import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import App from './containers/app';
 // Добавили
-import WorkerMiddleware, { reducer } from 'redux-worker-middleware';
+import WorkerMiddleware, { reducer } from 'redux-webworker-middleware';
 
 // Первым аргументом передаем редюсер из redux-worker-middleware
 let store = createStore(reducer, applyMiddleware(
@@ -25,11 +25,11 @@ render(
         <App/>
     </Provider>,
     document.querySelector('#app')
-);
-```
+); 
+``` 
 worker-reducer.js
 ```javascript
-import { CreateWorker } from 'redux-worker-middleware';
+import { CreateWorker } from 'redux-webworker-middleware';
 // Ваша функция-редюсер
 import ReducersController from './reducers';
 
